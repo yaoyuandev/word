@@ -14,4 +14,7 @@ class AnkiController(val service: AnkiService) {
 
     @GetMapping("/add")
     fun add(@RequestParam f: String, @RequestParam b: String) = service.add(f, b)
+
+    @GetMapping("/sync")
+    fun sync() = service.sync()
 }

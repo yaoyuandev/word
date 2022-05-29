@@ -9,12 +9,12 @@ class AnkiService {
 
     val rest = RestTemplate()
 
-    fun decks() = rest.postForEntity<String>("http://127.0.0.1:8765", Action("deckNames", null))
+    fun decks() = rest.postForEntity<String>(url, Action("deckNames"))
 
     fun add(front: String, back: String) = add(Note(fields = Fields(front, back), audio = null))
 
     fun add(note: Note) = rest.postForEntity<String>(
-        "http://127.0.0.1:8765",
+        url,
         Action(
             "addNote",
             Params(
@@ -22,4 +22,15 @@ class AnkiService {
             )
         )
     )
+
+    fun sync() = rest.postForEntity<String>(
+        url,
+        Action(
+            "sync"
+        )
+    )
+
+    companion object {
+        const val url = "http://127.0.0.1:8765"
+    }
 }
