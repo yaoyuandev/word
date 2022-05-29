@@ -25,18 +25,20 @@ defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
 ```html
 {{Front}}
 
-<div id="anki_tts">{{tts en_US voices=Apple_Samantha,Microsoft_Zira speed=1.0:Front}}</div>
+<div id="anki_tts">
+  {{tts en_US voices=Apple_Samantha,Microsoft_Zira speed=1.0:Front}}
+</div>
 
 <div id="ankidroid_tts" style="display:none;">
-    <tts id="tts_tag" service="android" voice="en_US">{{Front}}</tts>
+  <tts id="tts_tag" service="android" voice="en_US">{{Front}}</tts>
 </div>
 
 <script>
- if (document.documentElement.classList.contains("android")) {
-       document.getElementById("anki_tts").innerHTML = "";
- } else {
-       document.getElementById("ankidroid_tts").innerHTML = "";
- }
+  if (document.documentElement.classList.contains("android")) {
+    document.getElementById("anki_tts").innerHTML = "";
+  } else {
+    document.getElementById("ankidroid_tts").innerHTML = "";
+  }
 </script>
 ```
 
@@ -75,3 +77,12 @@ CREATE TABLE `stardict` (
   KEY `stardict_word_IDX` (`word`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3402565 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;\
 ```
+
+## chrome 插件
+
+提供了划词右键查词的功能,安装方法是访问
+chrome://extensions
+安装本项目的 chrome 目录
+![效果](docs/img/ext.jpg)
+
+![ui](docs/img/ui.jpg)
