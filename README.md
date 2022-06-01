@@ -86,3 +86,24 @@ chrome://extensions
 ![效果](docs/img/ext.jpg)
 
 ![ui](docs/img/ui.jpg)
+
+## Anki 技巧
+
+1. 推荐用电脑, 可以用键盘快捷键
+
+- 空格 看解析
+- 1 again 这个单词不认识，或者认识错了
+- 2 hard 想了一会儿想出来了
+- 3 good 认识
+- 4 easy 非常认识
+
+不建议用 easy, easy 的意思是重复时间过短了。建议都用 good
+如果一开始用 easy, 可以在 browse 页面选中单词, 右键 `forget`
+这样会重置单词的复习时间，被视为新的单词
+
+在 deck 的 options 里可以选每天新学的单词数量
+
+参考 <https://docs.ankiweb.net/studying.html>
+
+可以使用 [2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+在 Preferences, Scheduling 里, 选 V3 Scheduler. 新版的卡片调度器.

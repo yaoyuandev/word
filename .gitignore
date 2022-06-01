@@ -2,3 +2,4 @@
 target
 *.iml
 config/application.properties
+.DS_Store
