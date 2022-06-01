@@ -1,6 +1,8 @@
 # word
 
-remember the words
+词典 + 背单词
+免费, self-hosting, 极快
+![dataflow](docs/img/word-dataflow.png)
 
 ## Anki
 
