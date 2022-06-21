@@ -47,7 +47,7 @@ defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
 ## MySQL
 
 本项目主要用到了 [ECDICT](https://github.com/skywind3000/ECDICT) 作为词典
-解压项目的 stardict.7z, 得到 stardict.csv, 之后将 CSV 导入 MySQL
+解压项目的 stardict.7z, 得到 stardict.csv, 之后将 CSV 导入 [MySQL](https://dev.mysql.com/downloads/mysql/)
 推荐用 [dbeaver](https://github.com/dbeaver/dbeaver)
 
 ## DDL
