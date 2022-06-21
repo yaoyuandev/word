@@ -96,7 +96,7 @@ chrome://extensions
 - 空格 看解析
 - 1 again 这个单词不认识，或者认识错了
 - 2 hard 想了一会儿想出来了
-- 3 good 认识
+- 3 good 认识 (也可以按空格)
 - 4 easy 非常认识
 
 不建议用 easy, easy 的意思是重复时间过短了。建议都用 good
