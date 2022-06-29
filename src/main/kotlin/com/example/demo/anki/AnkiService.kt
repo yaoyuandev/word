@@ -11,7 +11,7 @@ class AnkiService {
 
     fun decks() = rest.postForEntity<String>(url, Action("deckNames"))
 
-    fun add(front: String, back: String) = add(Note(fields = Fields(front, back), audio = null))
+    fun add(front: String, back: String) = add(Note(fields = Fields(front, back)))
 
     fun add(note: Note) = rest.postForEntity<String>(
         url,
