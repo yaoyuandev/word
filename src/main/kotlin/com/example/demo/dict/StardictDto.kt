@@ -12,15 +12,7 @@ data class StardictDto(
     val exchange: String? = null,
 ) : Serializable {
 
-    val save = "http://localhost:8080/save?word=$word"
-    val say = "http://localhost:8080/say?word=$word"
-
-    fun toNote(url: String?) = Note(
+    fun toNote() = Note(
         fields = Fields(word, "$phonetic<br>$translation<br/>$definition<br/>$exchange<br>"),
-        audio = if (url != null) {
-            null
-        } else {
-            null
-        }
     )
 }
