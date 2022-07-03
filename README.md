@@ -20,29 +20,44 @@ defaults write net.ichi2.anki NSAppSleepDisabled -bool true
 defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
 ```
 
-### TTS 配置
+### 卡片配置
+
+TTS:
 
 <https://github.com/ankidroid/Anki-Android/wiki/FAQ#tts--text-to-speech-is-not-speaking>
 
+Front Template:
+
 ```html
 {{Front}}
+```
 
-<div id="anki_tts">
-  {{tts en_US voices=Apple_Samantha,Microsoft_Zira speed=1.0:Front}}
-</div>
+Back Template:
+
+```html
+{{Front}}
+<br/>
+<div id="anki_tts">{{tts en_US voices=Apple_Samantha,Microsoft_Zira speed=1.0:Front}}</div>
 
 <div id="ankidroid_tts" style="display:none;">
-  <tts id="tts_tag" service="android" voice="en_US">{{Front}}</tts>
+    <tts id="tts_tag" service="android" voice="en_US">{{Front}}</tts>
 </div>
 
 <script>
-  if (document.documentElement.classList.contains("android")) {
-    document.getElementById("anki_tts").innerHTML = "";
-  } else {
-    document.getElementById("ankidroid_tts").innerHTML = "";
-  }
+ if (document.documentElement.classList.contains("android")) {
+       document.getElementById("anki_tts").innerHTML = "";
+ } else {
+       document.getElementById("ankidroid_tts").innerHTML = "";
+ }
 </script>
+<br/>
+{{Back}}
+
+<br/>
+<img src="{{Image}}"/>
 ```
+
+再手动 加一个 Image 的 Field
 
 ## MySQL
 
