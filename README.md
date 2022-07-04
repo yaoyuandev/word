@@ -61,7 +61,7 @@ Back Template:
 
 ### 图床
 通过图片背单词，效果更好！
-虽然 AnkiWeb 本身可以同步图片，但比较是免费的，虽然很良心，但很慢。
+虽然 AnkiWeb 本身可以同步图片，但毕竟是免费的，虽然很良心，但很慢。
 可以通过图床，图片存在图床里，AnkiWeb 只同步 URL，变得更快！
 
 我目前使用的是 百度智能云的 [BOS](https://cloud.baidu.com/product/bos.html)。
