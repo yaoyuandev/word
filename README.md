@@ -59,6 +59,16 @@ Back Template:
 
 再手动 加一个 Image 的 Field
 
+### 图床
+通过图片背单词，效果更好！
+虽然 AnkiWeb 本身可以同步图片，但比较是免费的，虽然很良心，但很慢。
+可以通过图床，图片存在图床里，AnkiWeb 只同步 URL，变得更快！
+
+我目前使用的是 百度智能云的 [BOS](https://cloud.baidu.com/product/bos.html)。
+之后使用 [upic](https://github.com/gee1k/uPic) ，里面自带了 BOS 的配置，非常方便。
+
+![img](https://anki-img-yy.fsh.bcebos.com/uPic/eryBhr.png)
+
 ## MySQL
 
 本项目主要用到了 [ECDICT](https://github.com/skywind3000/ECDICT) 作为词典
