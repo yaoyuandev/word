@@ -123,6 +123,7 @@ chrome://extensions
 - 2 hard 想了一会儿想出来了
 - 3 good 认识 (也可以按空格)
 - 4 easy 非常认识
+- CMD + Z 上一个点错了
 
 不建议用 easy, easy 的意思是重复时间过短了。建议都用 good
 如果一开始用 easy, 可以在 browse 页面选中单词, 右键 `forget`
