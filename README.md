@@ -135,3 +135,9 @@ chrome://extensions
 
 可以使用 [2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
 在 Preferences, Scheduling 里, 选 V3 Scheduler. 新版的卡片调度器.
+
+## bookmarklet
+```js
+javascript:window.open(`http://localhost:8081?q=${window.getSelection().toString()}&save=true`)
+```
+在新建一个书签，填入上述代码。即可实现划词查词并存到 anki 的功能。
