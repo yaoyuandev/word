@@ -141,3 +141,8 @@ chrome://extensions
 javascript:window.open(`http://localhost:8081?q=${window.getSelection().toString()}&save=true`)
 ```
 在新建一个书签，填入上述代码。即可实现划词查词并存到 anki 的功能。
+
+## alfred
+如果你使用 [alfred](https://www.alfredapp.com/), 你可以自定义一个搜索引擎，word
+`http://localhost:8081?q={query}&save=true`
+这样就可以通过 alfred 查单词
