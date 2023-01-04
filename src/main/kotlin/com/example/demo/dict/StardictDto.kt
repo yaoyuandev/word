@@ -11,7 +11,8 @@ data class StardictDto(
     val definition: String? = null,
     val translation: String? = null,
     val exchange: String? = null,
-    val links: ArrayList<String> = arrayListOf("https://www.vocabulary.com/dictionary/$word")
+    val links: ArrayList<String> = arrayListOf("https://www.vocabulary.com/dictionary/$word",
+        "https://www.etymonline.com/word/introspection/$word")
 ) : Serializable {
 
     fun toNote() = Note(
