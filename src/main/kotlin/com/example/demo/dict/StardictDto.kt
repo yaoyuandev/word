@@ -3,7 +3,6 @@ package com.example.demo.dict
 import com.example.demo.anki.Fields
 import com.example.demo.anki.Note
 import java.io.Serializable
-import java.util.StringJoiner
 
 data class StardictDto(
     val word: String,
