@@ -19,7 +19,7 @@ class IndexController(val repo: StardictRepository, val anki: AnkiService, val f
         @RequestParam q: String,
         @RequestParam(defaultValue = "false") save: Boolean,
     ): StardictDto {
-        val dto = repo.findByWord(q.trim().lowercase()).get().toDTO()
+        val dto = repo.findByWord(q.trim().lowercase()).first().toDTO()
         if (save) {
             val note = dto.toNote()
             println("note=$note")
@@ -30,7 +30,7 @@ class IndexController(val repo: StardictRepository, val anki: AnkiService, val f
 
     @GetMapping("/save")
     fun save(@RequestParam word: String): ResponseEntity<String> {
-        val stardictDto = repo.findByWord(word).get().toDTO()
+        val stardictDto = repo.findByWord(word).first().toDTO()
         val note = stardictDto.toNote()
         println("note=$note")
         return anki.add(note)

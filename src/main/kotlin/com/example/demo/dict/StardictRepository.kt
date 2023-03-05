@@ -5,5 +5,7 @@ import java.util.*
 
 interface StardictRepository : JpaRepository<Stardict, Int> {
 
-    fun findByWord(word: String): Optional<Stardict>
+
+    fun findByWord(word: String): List<Stardict>
+
 }
